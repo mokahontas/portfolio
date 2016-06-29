@@ -67,16 +67,25 @@ to {background-position: 100% 0;}
   height: 150px;
 
 }
-.huladancer {
+#image {
   position: absolute;
   top: 30%;
   left: 10%;
 }
-.notice {
-  position: fixed;
+.profile {
+  position: absolute;;
   background-color: white;
-  width: 100px;
-  height: 100px;
+  opacity: 0.8;
+  border: 2px solid black;
+  max-width: 300px;
+
+}
+.projects {
+  position: absolute;;
+  background-color: white;
+  opacity: 0.8;
+  border: 2px solid black;
+  max-width: 400px;
 }
 
 #ocean {
