@@ -1,3 +1,7 @@
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Open Sans', sans-serif; */
 
 #top, #bottom, #left, #right {
 	background: black;
@@ -9,24 +13,37 @@
 		bottom: 0;
 		width: 50px;
 		}
-		#left { 
+#left { 
 		left: 0; 
 		}
-		#right { 
+#right { 
 		right: 0;
 		}
 		
-#top, #bottom {
+#bottom {
+	bottom: 0;
 	left: 0; 
 	right: 0;
 	height: 50px;
-		}
+	}
 #top { 
 	top: 0; 
+	left: 0; 
+	right: 0;
+	height: 100px;
 		}
-#bottom { 
-	bottom: 0;
-		}
+#logo {
+	height: 100px;
+	width: 120px;
+	top: 0;
+	position: absolute;
+}
+#contacts {
+	right: 0;
+	position: absolute;
+	display: inline;
+	margin: 10px;
+}
 
 
 
@@ -64,26 +81,40 @@
 }
 
 #image {
-  position: absolute;
-  z-index: 4;
-  bottom: 20%;
-  left: 10%;
+	position: absolute;
+	z-index: 10;
+	left: 10%;
+	bottom: 20%;
 }
+.click-here {
+	position: absolute;
+	bottom: 40%;
+	left: 5%;
+	z-index: 10;
+	opacity: 0.8;
+}
+
 #profile {
   position: absolute;;
   background-color: white;
-  top: 5%;
+  top: 10%;
   left: 20%;
   z-index: 11;
-  opacity: 0.8;
+ /*  opacity: 0.8; */
   border: 2px solid black;
-  max-width: 500px;
-  margin: 5px;
-  padding: 5px;
+  max-width: 600px;
+  max-height: 750px;
+  margin: 20px;
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  border-radius: 10px 10px 10px 10px;
+  text-align: justify;
 }
-h4 {
-  position: absolute;
-  display: inline-block;
+.my_image {
+	float: right;
+	border-radius: 10px 10px 10px 10px;
+	margin-left: 20px;
 }
 .projects {
   position: absolute;;
