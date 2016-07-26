@@ -1,4 +1,17 @@
-
+.nav {
+  background-color: black;
+  position: absolute;
+  z-index: 9;
+  height: 10vh;
+  width: 100%;
+}
+.black-wave {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  height: 20vh;
+}
 .sky {
   background-image: url(https://pixabay.com/static/uploads/photo/2015/03/26/09/48/sunset-690333_960_720.jpg);
   width: 100%;
