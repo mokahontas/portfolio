@@ -1,3 +1,4 @@
+
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Architects Daughter', cursive;
 font-family: 'Special Elite', cursive;
@@ -13,24 +14,24 @@ font-family: 'Open Sans', sans-serif; */
 		bottom: 0;
 		width: 50px;
 		}
-#left { 
-		left: 0; 
+#left {
+		left: 0;
 		}
-#right { 
+#right {
 		right: 0;
 		}
-		
+
 #bottom {
 	bottom: 0;
-	left: 0; 
+	left: 0;
+	right: 0;
+	height: 25px;
+	}
+#top {
+	top: 0;
+	left: 0;
 	right: 0;
 	height: 50px;
-	}
-#top { 
-	top: 0; 
-	left: 0; 
-	right: 0;
-	height: 100px;
 		}
 #logo {
 	height: 100px;
@@ -44,8 +45,6 @@ font-family: 'Open Sans', sans-serif; */
 	display: inline;
 	margin: 10px;
 }
-
-
 
 .sky {
   background-image: url(http://i.imgur.com/Of5mKHA.jpg);
@@ -212,13 +211,13 @@ to {background-position: 100% 0;}
   animation: left-to-right 30s infinite linear, grow 5s ease-in-out infinite alternate;
 
 }
-@media 
+@media
 
 /* Fairly small screens including iphones */
 only screen and (max-width: 500px),
 
 /* iPads */
-only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 
 {
 	#top, #bottom, #left, #right { display: none; }
