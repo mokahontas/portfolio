@@ -1,24 +1,58 @@
-.nav {
-  background-color: black;
-  position: absolute;
-  z-index: 9;
-  height: 10vh;
-  width: 100%;
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Open Sans', sans-serif; */
+
+#top, #bottom, #left, #right {
+	background: black;
+	position: fixed;
+	z-index: 20;
+	}
+#left, #right {
+		top: 0;
+		bottom: 0;
+		width: 50px;
+		}
+#left {
+		left: 0;
+		}
+#right {
+		right: 0;
+		}
+
+#bottom {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	}
+#top {
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+		}
+#logo {
+	height: 100px;
+	width: 120px;
+	top: 0;
+	position: absolute;
 }
-.black-wave {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 10;
-  height: 20vh;
+#contacts {
+	right: 0;
+	position: absolute;
+	display: inline;
+	margin: 10px;
 }
+
 .sky {
-  background-image: url(https://pixabay.com/static/uploads/photo/2015/03/26/09/48/sunset-690333_960_720.jpg);
+  background-image: url(http://i.imgur.com/Of5mKHA.jpg);
   width: 100%;
   height: 100%;
   background-size: cover;
-  /*background-size: 100% 100%;*/
   position: absolute;
+  z-index: 1;
 }
 
 /*boat*/
@@ -33,36 +67,53 @@
 .boat {
   position: absolute;
   right: 5%;
-  top: 10%;
+  bottom: 15%;
   animation: floating 10s infinite alternate;
+  z-index: 2;
 }
 #island {
   z-index: 1;
   position: absolute;
-  height: 90%;
+  height: 80%;
+  bottom: 4%;
+  left: 5%;
 }
 
 #image {
-  position: absolute;
-  z-index: 4;
-  top: 30%;
-  left: 5%;
+	position: absolute;
+	z-index: 10;
+	left: 10%;
+	bottom: 20%;
 }
+.click-here {
+	position: absolute;
+	bottom: 40%;
+	left: 5%;
+	z-index: 10;
+	opacity: 0.8;
+}
+
 #profile {
   position: absolute;;
   background-color: white;
-  top: 5%;
+  top: 10%;
   left: 20%;
   z-index: 11;
-  opacity: 0.8;
+ /*  opacity: 0.8; */
   border: 2px solid black;
-  max-width: 500px;
-  margin: 5px;
-  padding: 5px;
+  max-width: 600px;
+  max-height: 750px;
+  margin: 20px;
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  border-radius: 10px 10px 10px 10px;
+  text-align: justify;
 }
-h4 {
-  position: absolute;
-  display: inline-block;
+.my_image {
+	float: right;
+	border-radius: 10px 10px 10px 10px;
+	margin-left: 20px;
 }
 .projects {
   position: absolute;;
@@ -116,7 +167,7 @@ to {background-position: 100% 0;}
   height: 180px;
   position: absolute;
   bottom: 0;
-  z-index: 1;
+  z-index: 3;
   background-color: rgb(30, 199, 244);
   opacity: 0.8;
 }
@@ -159,4 +210,15 @@ to {background-position: 100% 0;}
   background-repeat: repeat-x;
   animation: left-to-right 30s infinite linear, grow 5s ease-in-out infinite alternate;
 
+}
+@media
+
+/* Fairly small screens including iphones */
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+
+{
+	#top, #bottom, #left, #right { display: none; }
 }
