@@ -89,7 +89,7 @@ font-family: 'Open Sans', sans-serif; */
 	left: 10%;
 	bottom: 20%;
   height: 200px;
-  width: 100px;
+  width: 150px;
 }
 .click-here {
 	position: absolute;
@@ -220,14 +220,15 @@ to {background-position: 100% 0;}
 @media
 
 /* Fairly small screens including iphones */
-only screen and (max-width: 500px) and (max-device-height: 800px),
+only screen and (max-width: 500px),
 
 /* iPads */
-only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+only screen and (min-device-width: 768px) and (max-device-height: 800px)
 
 {
 #left, #right {
     width: 10px;
+    overflow: hidden;
   }
 #bottom {
   display: none;
@@ -238,10 +239,14 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 }
 #ocean {
   height: 125px;
+  width: 100%;
+  background-repeat: repeat-x;
 }
 #waveone, #wavetwo, #wavethree {
   background-size: auto;
   position: absolute;
+  overflow: hidden;
+  width: 100%;
 }
 #waveone {
   bottom: 0;
@@ -258,6 +263,7 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
   height: 300px;
 }
 #island {
-  height: 70%;
+
+  bottom: 0;
 }
 }
