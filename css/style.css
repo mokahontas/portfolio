@@ -39,11 +39,14 @@ font-family: 'Open Sans', sans-serif; */
 	top: 0;
 	position: absolute;
 }
+.links {
+  float: right;
+  display: inline;
+  z-index: 5;
+}
 #contacts {
-	right: 0;
-	position: absolute;
-	display: inline;
-	margin: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .sky {
@@ -52,7 +55,6 @@ font-family: 'Open Sans', sans-serif; */
   height: 100%;
   background-size: cover;
   position: absolute;
-  z-index: 1;
 }
 
 /*boat*/
@@ -70,6 +72,8 @@ font-family: 'Open Sans', sans-serif; */
   bottom: 15%;
   animation: floating 10s infinite alternate;
   z-index: 2;
+  height: 370px;
+  width: 350px;
 }
 #island {
   z-index: 1;
@@ -81,9 +85,11 @@ font-family: 'Open Sans', sans-serif; */
 
 #image {
 	position: absolute;
-	z-index: 10;
+	z-index: 1;
 	left: 10%;
 	bottom: 20%;
+  height: 200px;
+  width: 100px;
 }
 .click-here {
 	position: absolute;
@@ -214,11 +220,44 @@ to {background-position: 100% 0;}
 @media
 
 /* Fairly small screens including iphones */
-only screen and (max-width: 500px),
+only screen and (max-width: 500px) and (max-device-height: 800px),
 
 /* iPads */
 only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 
 {
-	#top, #bottom, #left, #right { display: none; }
+#left, #right {
+    width: 10px;
+  }
+#bottom {
+  display: none;
+}
+#contacts {
+  width: 30px;
+  height: 30px;
+}
+#ocean {
+  height: 125px;
+}
+#waveone, #wavetwo, #wavethree {
+  background-size: auto;
+  position: absolute;
+}
+#waveone {
+  bottom: 0;
+  height: 30px;
+}
+#wavetwo {
+  bottom: 0;
+}
+#wavethree {
+  bottom: 65px;
+}
+.boat {
+  width: 300px;
+  height: 300px;
+}
+#island {
+  height: 70%;
+}
 }
