@@ -3,7 +3,10 @@
 font-family: 'Architects Daughter', cursive;
 font-family: 'Special Elite', cursive;
 font-family: 'Open Sans', sans-serif; */
-
+@keyframes left-to-right {
+  from {background-position: 0 0;}
+to {background-position: -100% 0;}
+}
 
 
 #top, #bottom, #left, #right {
@@ -72,15 +75,15 @@ font-family: 'Open Sans', sans-serif; */
 		stroke: #FFBC42
 	}
 	10% {
-		stroke-width: 50;
+	stroke-width: 15;
 		
 	}
 	15% {
-		
+
 	}
 	20% {
-		;
-		stroke-width: 15;
+		stroke-width: 20;
+		
 	}
 	25% {
 		
@@ -90,17 +93,18 @@ font-family: 'Open Sans', sans-serif; */
 		stroke-width: 50;
 	  }
 	35% {
-		stroke-width: 20;
+		
 	}
 	40% {
 		
 	}
 	45 {
 		stroke-width: 0;
-		stroke-width: 30;
+		
 	}
 	50% {
 		stroke: #FFBC42
+		stroke-width: 30;
 	}
 	55% {
 		
@@ -122,7 +126,7 @@ font-family: 'Open Sans', sans-serif; */
 		
 	}
 	85% {
-		stroke-width: 50;
+		stroke-width: 30;
 	}
 	90% {
 		
@@ -141,6 +145,7 @@ svg {
 	left: 20%;
 	opacity: 0.5;
 	z-index: 10;
+	animation: left-to-right 20s linear;
 }
 
 #svg_6 {
@@ -148,7 +153,8 @@ svg {
   stroke-dasharray: 15;
 	stroke-dashoffset: 500;
 /* transition: stroke-dashoffset 5s; */
-  animation: drawLine 20s ease-in-out forwards, clouds 20s forwards;
+	animation: drawLine 20s ease-in-out forwards, clouds 20s forwards;
+	
   
 }
 
@@ -240,10 +246,7 @@ svg {
 }
 
 /*wave animation*/
-@keyframes left-to-right {
-  from {background-position: 0 0;}
-to {background-position: -100% 0;}
-}
+
 @keyframes right-to-left {
   from {background-position: 0 0;}
 to {background-position: 100% 0;}
