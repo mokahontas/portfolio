@@ -221,11 +221,26 @@ to {background-position: 100% 0;}
 @media
 
 /* Fairly small screens including iphones */
-only screen and (max-width: 500px),
-
+only screen and (max-width: 500px)
+/*{
+  #left, #right {
+      width: 10px;
+      overflow: hidden;
+    }
+  #top {
+    height: 15%;
+  }
+  #bottom {
+    display: none;
+  }
+  #island {
+    bottom: 0;
+    height: 50%;
+    width: 40%;
+  }
+}*/
 /* iPads */
-only screen and (min-device-width: 768px) and (max-device-height: 800px)
-
+@media only screen and (min-device-width: 768px) and (max-device-height: 800px)
 {
 #left, #right {
     width: 10px;
