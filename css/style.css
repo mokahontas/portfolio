@@ -3,18 +3,14 @@
 font-family: 'Architects Daughter', cursive;
 font-family: 'Special Elite', cursive;
 font-family: 'Open Sans', sans-serif; */
-@keyframes left-to-right {
-  from {background-position: 0 0;}
-to {background-position: -100% 0;}
-}
 
 
-#top, #bottom, #left, #right {
+/*#top, #bottom, #left, #right {
 	background: black;
 	position: fixed;
 	z-index: 20;
-	}
-#left, #right {
+	}*/
+/*#left, #right {
 		top: 0;
 		bottom: 0;
 		width: 50px;
@@ -37,8 +33,11 @@ to {background-position: -100% 0;}
 	left: 0;
 	right: 0;
 	height: 100px;
-		}
-		
+
+		}*/
+
+
+
 #logo {
 	height: 100px;
 	width: 120px;
@@ -64,80 +63,114 @@ to {background-position: -100% 0;}
 /* 	#FFBC42
 	#D81159
 	#a3a1a1 */
+/*@keyframes clouds {
+	0% {
+		stroke-width: 20;
+	  }
+	5% {
+
 @keyframes clouds {
 	0% {
 		stroke-width: 20;
-		
-		
+
+
 	  }
 	5% {
-		
+
 		stroke: #FFBC42
 	}
 	10% {
 	stroke-width: 15;
-		
 	}
 	15% {
 
 	}
 	20% {
 		stroke-width: 20;
-		
+
 	}
 	25% {
-		
+
+		stroke: #D81159;
+
+	}
+	25% {
+
 		stroke: #D81159
 	  }
 	30% {
 		stroke-width: 50;
 	  }
 	35% {
-		
 	}
 	40% {
-		
+
+	}
+	45% {
+		stroke-width: 0;
+
+	}
+	50% {
+		stroke: #FFBC42;
+		stroke-width: 30;
+	}
+	55% {
+
+	}
+	40% {
+
 	}
 	45 {
 		stroke-width: 0;
-		
+
 	}
 	50% {
 		stroke: #FFBC42
 		stroke-width: 30;
 	}
 	55% {
-		
+
 	}
 	60% {
 		stroke-width: 15;
 	  }
 	65% {
-		
 	}
 	70% {
 		stroke-width: 30;
 	}
 	75% {
 		stroke-width: 20;
-		stroke: #a3a1a1; 
+		stroke: #a3a1a1;
 	  }
 	80% {
-		
-	}
+		stroke: #a3a1a1;
+	  }
+	80% {}
 	85% {
 		stroke-width: 30;
 	}
 	90% {
-		
+
+
 	}
 	95% {
-		
+
 	}
 	100% {
 		stroke-width: 0;
-		
-	  }	
+
+	  }
+=======
+
+	}
+	95% {
+
+	}
+	100% {
+		stroke-width: 0;
+
+	  }
 }
 svg {
 	position: absolute;
@@ -152,11 +185,15 @@ svg {
   stroke: white;
   stroke-dasharray: 15;
 	stroke-dashoffset: 500;
-/* transition: stroke-dashoffset 5s; */
 	animation: drawLine 20s ease-in-out forwards, clouds 20s forwards;
-	
-  
-}
+
+
+}*/
+
+/*transition: stroke-dashoffset 5s;
+	animation: drawLine 20s ease-in-out forwards, clouds 20s forwards;
+}*/
+
 
 .sky {
   background-image: url(http://i.imgur.com/Of5mKHA.jpg);
@@ -166,7 +203,10 @@ svg {
   position: absolute;
   z-index: 1;
 }
-
+@keyframes left-to-right {
+  from {background-position: 0 0;}
+to {background-position: -100% 0;}
+}
 /*boat*/
 @keyframes floating{
   0%{
@@ -189,7 +229,7 @@ svg {
   z-index: 1;
   position: absolute;
   height: 80%;
-  bottom: 4%;
+  bottom:10%;;
   left: 5%;
 }
 
@@ -197,18 +237,17 @@ svg {
 	position: absolute;
 	z-index: 1;
 	left: 10%;
-	bottom: 20%;
+	bottom: 30%;
   height: 200px;
   width: 150px;
 }
 .click-here {
 	position: absolute;
-	bottom: 35%;
-	left: 5%;
+	bottom:45%;
+	left: 3%;
 	z-index: 10;
-	opacity: 0.8;
-	width: 10vw;
-	height: 10vh;
+	width: 150px;
+	height: 100px;
 }
 
 #profile {
@@ -280,7 +319,7 @@ to {background-position: 100% 0;}
 /*waves*/
 #ocean {
   width: 100%;
-  height: 180px;
+  height: 150px;
   position: absolute;
   bottom: 0;
   z-index: 3;
@@ -292,7 +331,7 @@ to {background-position: 100% 0;}
   background-position: bottom;
   position: absolute;
   z-index: 10;
-  bottom: 0;
+  bottom: -50px;
   height: 100px;
   width: 95%;
   background-repeat: repeat-x;
@@ -305,7 +344,7 @@ to {background-position: 100% 0;}
   background-position: bottom;
   position: absolute;
   z-index: 9;
-  bottom: 60px;
+  bottom: 25px;
   height: 100px;
   width: 95%;
   overflow: hidden;
@@ -320,7 +359,7 @@ to {background-position: 100% 0;}
   position: absolute;
   z-index: 7;
   overflow: hidden;
-  bottom: 120px;
+  bottom: 90px;
   height: 100px;
   width: 95%;
   background-repeat: repeat-x;
@@ -330,11 +369,26 @@ to {background-position: 100% 0;}
 @media
 
 /* Fairly small screens including iphones */
-only screen and (max-width: 500px),
-
+only screen and (max-width: 500px)
+/*{
+  #left, #right {
+      width: 10px;
+      overflow: hidden;
+    }
+  #top {
+    height: 15%;
+  }
+  #bottom {
+    display: none;
+  }
+  #island {
+    bottom: 0;
+    height: 50%;
+    width: 40%;
+  }
+}*/
 /* iPads */
-only screen and (min-device-width: 768px) and (max-device-height: 800px)
-
+@media only screen and (min-device-width: 768px) and (max-device-height: 800px)
 {
 #left, #right {
     width: 10px;
@@ -351,7 +405,7 @@ only screen and (min-device-width: 768px) and (max-device-height: 800px)
   height: 30px;
 }*/
 #ocean {
-  height: 125px;
+  height: 120px;
   width: 100%;
 }
 #waveone, #wavetwo, #wavethree {
@@ -368,13 +422,13 @@ only screen and (min-device-width: 768px) and (max-device-height: 800px)
   bottom: 0;
 }
 #wavethree {
-  bottom: 62px;
+  bottom: 60px;
 }
 .boat {
   width: 300px;
   height: 300px;
 }
 #island {
-  bottom: 0;
+  bottom: 10%;
 }
 }
