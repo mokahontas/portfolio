@@ -3,6 +3,11 @@
 font-family: 'Architects Daughter', cursive;
 font-family: 'Special Elite', cursive;
 font-family: 'Open Sans', sans-serif; */
+@keyframes left-to-right {
+  from {background-position: 0 0;}
+to {background-position: -100% 0;}
+}
+
 
 #top, #bottom, #left, #right {
 	background: black;
@@ -31,8 +36,9 @@ font-family: 'Open Sans', sans-serif; */
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 50px;
+	height: 100px;
 		}
+
 #logo {
 	height: 100px;
 	width: 120px;
@@ -48,6 +54,108 @@ font-family: 'Open Sans', sans-serif; */
 #contacts {
   width: 50px;
   height: 50px;
+}
+/* aloha cloud */
+@keyframes drawLine {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+/* 	#FFBC42
+	#D81159
+	#a3a1a1 */
+@keyframes clouds {
+	0% {
+		stroke-width: 20;
+
+
+	  }
+	5% {
+
+		stroke: #FFBC42
+	}
+	10% {
+	stroke-width: 15;
+
+	}
+	15% {
+
+	}
+	20% {
+		stroke-width: 20;
+
+	}
+	25% {
+
+		stroke: #D81159;
+	  }
+	30% {
+		stroke-width: 50;
+	  }
+	35% {
+
+	}
+	40% {
+
+	}
+	45% {
+		stroke-width: 0;
+
+	}
+	50% {
+		stroke: #FFBC42;
+		stroke-width: 30;
+	}
+	55% {
+
+	}
+	60% {
+		stroke-width: 15;
+	  }
+	65% {
+
+	}
+	70% {
+		stroke-width: 30;
+	}
+	75% {
+		stroke-width: 20;
+		stroke: #a3a1a1;
+	  }
+	80% {
+
+	}
+	85% {
+		stroke-width: 30;
+	}
+	90% {
+
+	}
+	95% {
+
+	}
+	100% {
+		stroke-width: 0;
+
+	  }
+}
+svg {
+	position: absolute;
+	top: -150px;
+	left: 20%;
+	opacity: 0.5;
+	z-index: 10;
+	animation: left-to-right 20s linear;
+}
+
+#svg_6 {
+  stroke: white;
+  stroke-dasharray: 15;
+	stroke-dashoffset: 500;
+/* transition: stroke-dashoffset 5s; */
+	animation: drawLine 20s ease-in-out forwards, clouds 20s forwards;
+
+
 }
 
 .sky {
@@ -95,10 +203,12 @@ font-family: 'Open Sans', sans-serif; */
 }
 .click-here {
 	position: absolute;
-	bottom: 40%;
+	bottom: 35%;
 	left: 5%;
 	z-index: 10;
 	opacity: 0.8;
+	width: 10vw;
+	height: 10vh;
 }
 
 #profile {
@@ -120,6 +230,8 @@ font-family: 'Open Sans', sans-serif; */
 .my_image {
 	float: right;
 	border-radius: 10px 10px 10px 10px;
+	height: 250px;
+	width: 200px;
 	margin-left: 20px;
 }
 .projects {
@@ -134,10 +246,7 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 /*wave animation*/
-@keyframes left-to-right {
-  from {background-position: 0 0;}
-to {background-position: -100% 0;}
-}
+
 @keyframes right-to-left {
   from {background-position: 0 0;}
 to {background-position: 100% 0;}
@@ -185,7 +294,7 @@ to {background-position: 100% 0;}
   z-index: 10;
   bottom: 0;
   height: 100px;
-  width: 100%;
+  width: 95%;
   background-repeat: repeat-x;
   overflow: hidden;
   animation: left-to-right 30s infinite linear, grow 6s ease-in-out infinite alternate;
@@ -198,7 +307,7 @@ to {background-position: 100% 0;}
   z-index: 9;
   bottom: 60px;
   height: 100px;
-  width: 100%;
+  width: 95%;
   overflow: hidden;
   background-repeat: repeat-x;
   animation: right-to-left 50s infinite linear, grow 4s ease-in-out infinite alternate;
@@ -213,7 +322,7 @@ to {background-position: 100% 0;}
   overflow: hidden;
   bottom: 120px;
   height: 100px;
-  width: 100%;
+  width: 95%;
   background-repeat: repeat-x;
   animation: left-to-right 30s infinite linear, grow 5s ease-in-out infinite alternate;
 
@@ -247,7 +356,7 @@ only screen and (max-width: 500px)
     overflow: hidden;
   }
 #top {
-  height: 15%;
+  height: 20%;
 }
 #bottom {
   display: none;
@@ -259,7 +368,6 @@ only screen and (max-width: 500px)
 #ocean {
   height: 125px;
   width: 100%;
-  background-repeat: repeat-x;
 }
 #waveone, #wavetwo, #wavethree {
   background-size: auto;
@@ -282,7 +390,6 @@ only screen and (max-width: 500px)
   height: 300px;
 }
 #island {
-
   bottom: 0;
 }
 }
