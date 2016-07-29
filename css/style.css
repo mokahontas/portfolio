@@ -3,10 +3,6 @@
 font-family: 'Architects Daughter', cursive;
 font-family: 'Special Elite', cursive;
 font-family: 'Open Sans', sans-serif; */
-@keyframes left-to-right {
-  from {background-position: 0 0;}
-to {background-position: -100% 0;}
-}
 
 
 /*#top, #bottom, #left, #right {
@@ -37,7 +33,10 @@ to {background-position: -100% 0;}
 	left: 0;
 	right: 0;
 	height: 100px;
+
 		}*/
+
+
 
 #logo {
 	height: 100px;
@@ -67,6 +66,12 @@ to {background-position: -100% 0;}
 /*@keyframes clouds {
 	0% {
 		stroke-width: 20;
+	  }
+	5% {
+
+@keyframes clouds {
+	0% {
+		stroke-width: 20;
 
 
 	  }
@@ -76,7 +81,6 @@ to {background-position: -100% 0;}
 	}
 	10% {
 	stroke-width: 15;
-
 	}
 	15% {
 
@@ -88,12 +92,16 @@ to {background-position: -100% 0;}
 	25% {
 
 		stroke: #D81159;
+
+	}
+	25% {
+
+		stroke: #D81159
 	  }
 	30% {
 		stroke-width: 50;
 	  }
 	35% {
-
 	}
 	40% {
 
@@ -109,11 +117,24 @@ to {background-position: -100% 0;}
 	55% {
 
 	}
+	40% {
+
+	}
+	45 {
+		stroke-width: 0;
+
+	}
+	50% {
+		stroke: #FFBC42
+		stroke-width: 30;
+	}
+	55% {
+
+	}
 	60% {
 		stroke-width: 15;
 	  }
 	65% {
-
 	}
 	70% {
 		stroke-width: 30;
@@ -123,12 +144,24 @@ to {background-position: -100% 0;}
 		stroke: #a3a1a1;
 	  }
 	80% {
-
-	}
+		stroke: #a3a1a1;
+	  }
+	80% {}
 	85% {
 		stroke-width: 30;
 	}
 	90% {
+
+
+	}
+	95% {
+
+	}
+	100% {
+		stroke-width: 0;
+
+	  }
+=======
 
 	}
 	95% {
@@ -152,11 +185,15 @@ svg {
   stroke: white;
   stroke-dasharray: 15;
 	stroke-dashoffset: 500;
-
 	animation: drawLine 20s ease-in-out forwards, clouds 20s forwards;
 
 
 }*/
+
+/*transition: stroke-dashoffset 5s;
+	animation: drawLine 20s ease-in-out forwards, clouds 20s forwards;
+}*/
+
 
 .sky {
   background-image: url(http://i.imgur.com/Of5mKHA.jpg);
@@ -166,7 +203,10 @@ svg {
   position: absolute;
   z-index: 1;
 }
-
+@keyframes left-to-right {
+  from {background-position: 0 0;}
+to {background-position: -100% 0;}
+}
 /*boat*/
 @keyframes floating{
   0%{
@@ -206,7 +246,6 @@ svg {
 	bottom:45%;
 	left: 3%;
 	z-index: 10;
-	opacity: 0.8;
 	width: 150px;
 	height: 100px;
 }
