@@ -22,7 +22,7 @@ var last_latlng;
                 flight_path.setMap(map);
             }
             function getLatestPosition() {
-                $.getJSON('http://open-notify-api.herokuapp.com/iss-now.json?callback=?', function(data, status) {
+                $.getJSON('https://open-notify-api.herokuapp.com/iss-now.json?callback=?', function(data, status) {
                     position = data.iss_position;
                     var latlng = new google.maps.LatLng(position.latitude, position.longitude);
                     map.setCenter(latlng);
