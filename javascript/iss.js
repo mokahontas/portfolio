@@ -1,4 +1,4 @@
-var baseAstrosURL = "https://api.open-notify.org/astros.json";
+var baseAstrosURL = "http://api.open-notify.org/astros.json";
 var $baseAstrosContent = $(".astros .content");
 
 var displayAstrosInformation = function ( data ) {
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 });
 
-var baseLocationURL = "https://api.open-notify.org/iss-now.json";
+var baseLocationURL = "http://api.open-notify.org/iss-now.json";
 var $baseLocationContent = $(".location .content");
 
     var displayLocationInformation = function ( data ) {
