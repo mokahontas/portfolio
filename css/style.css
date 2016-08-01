@@ -3,8 +3,80 @@
 font-family: 'Architects Daughter', cursive;
 font-family: 'Special Elite', cursive;
 font-family: 'Open Sans', sans-serif; */
+@keyframes right-to-left {
+  from {background-position: 0 0;}
+to {background-position: 100% 0;}
+}
+@keyframes grow {
+  0% {
+    transform: scale(1.1);
+  }
 
+  25% {
+    transform: scale(1.15);
+  }
+  30% {
+    transform: scale(1.1);
+  }
 
+  60% {
+    transform: scale(1.15);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1.15);
+
+  }
+}
+
+.a {
+position: absolute;
+z-index: 10;
+top: 0;
+left: 20%;
+height: 150px;
+animation: grow 6s ease-in-out infinite alternate;
+}
+.l {
+	position: absolute;
+	z-index: 10;
+	top: 100px;
+	left: 30%;
+	height: 150px;
+	animation: grow 6s ease-in-out infinite alternate;
+}
+.o {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 40%;
+	height: 150px;
+	animation: grow 6s ease-in-out infinite alternate;
+
+}
+.h {
+	position: absolute;
+	z-index: 10;
+	top: 100px;
+	left: 50%;
+	height: 150px;
+	animation: grow 6s ease-in-out infinite alternate;
+
+}
+.end-a {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 60%;
+	height: 150px;
+	animation: grow 6s ease-in-out infinite alternate;
+}
+.a, .l, .o, .h, .end-a {
+	opacity: 0.7;
+}
 /*#top, #bottom, #left, #right {
 	background: black;
 	position: fixed;
@@ -55,11 +127,11 @@ font-family: 'Open Sans', sans-serif; */
   height: 50px;
 }
 /* aloha cloud */
-@keyframes drawLine {
+/*@keyframes drawLine {
   100% {
     stroke-dashoffset: 0;
   }
-}
+}*/
 /* 	#FFBC42
 	#D81159
 	#a3a1a1 */
@@ -161,7 +233,6 @@ font-family: 'Open Sans', sans-serif; */
 		stroke-width: 0;
 
 	  }
-=======
 
 	}
 	95% {
@@ -180,14 +251,11 @@ svg {
 	z-index: 10;
 	animation: left-to-right 20s linear;
 }
-
 #svg_6 {
   stroke: white;
   stroke-dasharray: 15;
 	stroke-dashoffset: 500;
 	animation: drawLine 20s ease-in-out forwards, clouds 20s forwards;
-
-
 }*/
 
 /*transition: stroke-dashoffset 5s;
@@ -286,36 +354,7 @@ to {background-position: -100% 0;}
 
 /*wave animation*/
 
-@keyframes right-to-left {
-  from {background-position: 0 0;}
-to {background-position: 100% 0;}
-}
 
-
-@keyframes grow {
-  0% {
-    transform: scale(1.1);
-  }
-
-  25% {
-    transform: scale(1.15);
-  }
-  30% {
-    transform: scale(1.1);
-  }
-
-  60% {
-    transform: scale(1.15);
-  }
-  75% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1.15);
-
-  }
-}
 /*waves*/
 #ocean {
   width: 100%;
